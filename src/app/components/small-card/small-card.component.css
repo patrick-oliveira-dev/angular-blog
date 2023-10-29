@@ -1,0 +1,47 @@
+.container {
+
+}
+
+.small-card-container {
+  height: 150px;
+  width: 400px;
+  min-width: 400px;
+  display: flex;
+  width: 500px;
+  gap: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+
+.image {
+  height: 100%;
+  border-top-left-radius: 15px;
+}
+
+.image > img {
+  height: 100%;
+  width: 200px;
+  min-width: 200px;
+  border-top-left-radius: 15px;
+}
+
+.published-date > p {
+  color: gray;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.title {
+  margin: auto;
+}
+
+.published-date {
+  align-self: flex-start;
+
+}

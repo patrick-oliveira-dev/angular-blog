@@ -1,0 +1,15 @@
+.menu__title {
+  color: white;
+}
+
+.menu__title > h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 9em;
+  padding: 20px 0px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu__title > hr {
+  margin: 20px 0px 20px;
+}
