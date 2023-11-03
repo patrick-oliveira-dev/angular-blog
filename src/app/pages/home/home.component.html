@@ -1,14 +1,17 @@
-<header>
-  <app-header></app-header>
-</header>
 <app-menu-title></app-menu-title>
 <div class="articles" height="600px">
   <div class="articles_main">
-    <app-big-card cardTitle="Goku evolui ao nivel supremo" photoCover="https://www.einerd.com.br/wp-content/uploads/2017/10/dragonballsuper-transforma%C3%A7%C3%A3oGokucapa-890x466.jpg.webp" cardDescription="Goku agora é o ser mais poderoso do universo, deixando para traz o lendário chuck norris"></app-big-card>
+    <app-big-card [id]="getBigCard().id"
+    [cardTitle]="getBigCard().title"
+    [photoCover]="getBigCard().photo"
+    [cardDescription]="getBigCard().description">></app-big-card>
   </div>
   <div class="articles_others">
-    <app-small-card cardTitle="Vegeta agora é bolsominion" publishedDate="18 fev 2023" photoCover="https://pbs.twimg.com/profile_images/1324546203590238208/Zl3ooW21_400x400.jpg"></app-small-card>
-    <app-small-card cardTitle="Paparazzi flagra robos acediando Kuririn" publishedDate="02 nov 2023" photoCover="https://onlineseries.com.br/wp-content/uploads/2023/03/Androide-18-e-Kuririn-1140x570.jpg"></app-small-card>
-    <app-small-card cardTitle="Goku declara apoio a nazistas, será o fim da humanidade?" publishedDate="21 Jun 2014" photoCover="https://preview.redd.it/frgvzoe9n1o41.png?auto=webp&s=6943dcdac6882094bb550dabae50ce96dd5548f9"></app-small-card>
+    <app-small-card *ngFor="let smallCard of getSmallCards()"
+      [id]="smallCard.id"
+      [cardTitle]="smallCard.title"
+      [publishedDate]="smallCard.publishedDate"
+      [photoCover]="smallCard.photo">
+    </app-small-card>
   </div>
 </div>

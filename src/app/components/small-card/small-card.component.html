@@ -1,18 +1,20 @@
 <div class="container">
-  <div class="small-card-container">
-    <div class="image">
-      <img height="100px" src="{{photoCover}}" alt="">
-    </div>
-    <div class="card-info">
-      <div class="published-date">
-        <p>{{publishedDate}}</p>
+  <a [routerLink]="['content', id]">
+    <div class="small-card-container">
+      <div class="image">
+        <img height="100px" src="{{photoCover}}" alt="">
       </div>
-      <div class="title">
-        <h3>{{cardTitle}}</h3>
+      <div class="card-info">
+        <div class="published-date">
+          <p>{{publishedDate}}</p>
+        </div>
+        <div class="title">
+          <h3>{{cardTitle}}</h3>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="line">
-    <hr>
-  </div>
+    <div class="line">
+      <hr>
+    </div>
+  </a>
 </div>
